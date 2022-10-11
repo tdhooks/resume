@@ -8,7 +8,8 @@ RUN apt update && \
     apt install -y \
     texlive-latex-base \
     texlive-latex-extra \
-    texlive-latex-recommended
+    texlive-latex-recommended \
+    texlive-fonts-extra
 
 COPY src .
 
