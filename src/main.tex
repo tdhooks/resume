@@ -105,7 +105,7 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Large \scshape Timothy Dayne Hooks} \\ \vspace{1pt}
-    \underline{tdhooks@tutanota.com} $|$ 
+    \underline{tdhooks@tuta.io} $|$
     \underline{linkedin.com/in/dayne-hooks} $|$
     \underline{github.com/tdhooks}
 \end{center}
@@ -114,9 +114,9 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Golang, C++, C\#, Rust} \\
-     \textbf{Developer Tools}{: Git, Linux, Compose} \\
-     \textbf{Libraries}{: gRPC, ZMQ, MPI, CUDA} \\
+     \textbf{Languages}{: Python, Go, C++, C\#, Rust} \\
+     \textbf{Developer Tools}{: Git, Linux, GNUMake} \\
+     \textbf{Libraries}{: gRPC, ZMQ, AMQP, Torch} \\
      \textbf{Applications}{: Kubernetes, Docker, Ray} \\
      \textbf{Concepts}{: Containers, Distributed Infrastructures, Distributed Learning, Microservices}
     }}
@@ -130,14 +130,14 @@
       {Software Engineer}{July 2021 -- Present}
       {Heron Systems, wholly owned by Shield AI}{Alexandria, VA}
       \resumeItemListStart
+        \resumeItem{Currently leading East Coast infrastructure team to improve internal compute distribution and MLOps toolset}
         \resumeItem{Owned and drove transition of all existing legacy infrastructure to on-premises Kubernetes stack}
         \resumeItem{Designed system to allow distributed and GPU accelerated RL training on multiple environments across a Kubernetes cluster}
-        \resumeItem{Built API to store and aggregate reinforcement learning agent evaluations}
-        \resumeItem{Introduced Grafana/Prometheus based metrics aggregation across multiple machines}
-        \resumeItem{Developed Sarus/SLURM based workload management stack and helper tools, allowing ML Engineers to run distributed and GPU capable workloads on cluster resources via a simple CLI}
+        \resumeItem{Built gRPC-driven service and client to store and aggregate reinforcement learning agent analysis data}
+        \resumeItem{Built simple interface for distributed queueing for batch processing via an AMQP backplane}
         \resumeItem{Took an active role in application security, including multiple vulnerability identifications and fixes on existing projects}
       \resumeItemListEnd
-      
+
     \resumeSubheading
       {Research Assistant}{August 2020 -- May 2021}
       {University of South Carolina}{Columbia, SC}
@@ -156,7 +156,7 @@
         \resumeItem{Implemented distributed cache expiration using a brokered AMQP backplane, allowing initial distributed implementations to maintain state while also fixing a known issue with cascading deletes}
         \resumeItem{Implemented a brokered RPC framework, allowing remote calls to distributed services via a work-queue-like interface}
       \resumeItemListEnd
-    
+
     \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
@@ -176,14 +176,14 @@
             \resumeItem{HPC cluster consisting of four Raspberry Pi's}
             \resumeItem{Originally orchestrated with SLURM, now pivoting to Kubernetes}
           \resumeItemListEnd
-      
+
       \resumeProjectHeading
           {\textbf{Hybrid SIMD} $|$ \emph{C, OpenMP, OpenMPI}}{Summer 2020}
           \resumeItemListStart
             \resumeItem{Implemented OpenMP/OpenMPI hybrid API for basic SIMD compute operations}
             \resumeItem{Used OpenMPI to parallelize across nodes, with nodes internally parallelized with OpenMP}
           \resumeItemListEnd
-         
+
     \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
@@ -194,7 +194,7 @@
       {B.S. in Computer Engineering, Minor in Business Administration}{May 2021}
           \resumeItemListStart
             \resumeItem{Magna Cum Laude}
-            
+
         \resumeItemListEnd
 
   \resumeSubHeadingListEnd
