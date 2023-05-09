@@ -1,3 +1,5 @@
+export DOCKER_BUILDKIT=1
+
 SRCDIR = ./src
 SRCFILES = $(wildcard $(SRCDIR)/*)
 
