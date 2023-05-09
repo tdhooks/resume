@@ -15,9 +15,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build Resume
-      run: docker build . --file Dockerfile --target resume --output ./build --build-arg OUTNAME=resume
+      run: docker buildx build . --file Dockerfile --target resume --output ./build --build-arg OUTNAME=resume
     - name: Publish Resume
       uses: actions/upload-artifact@v3
       with:
         name: resume
-        path: .
+        path: ./build/resume.pdf
