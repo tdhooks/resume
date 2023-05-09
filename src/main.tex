@@ -115,10 +115,10 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, Go, C++, C\#, Rust} \\
-     \textbf{Developer Tools}{: Git, Linux, GNUMake} \\
-     \textbf{Libraries}{: gRPC, ZMQ, AMQP, Torch} \\
-     \textbf{Applications}{: Kubernetes, Docker, Ray} \\
-     \textbf{Concepts}{: Containers, Distributed Infrastructures, Distributed Learning, Microservices}
+     \textbf{Developer Tools}{: Git, Linux, GNUMake, Tilt} \\
+     \textbf{Libraries}{: gRPC/Protobuf, Swagger, ZMQ, AMQP} \\
+     \textbf{Applications}{: Kubernetes, Docker, MongoDB, PostgreSQL, RabbitMQ} \\
+     \textbf{Concepts}{: Containers, Distributed Infrastructures, Distributed Learning, Service-based Applications}
     }}
  \end{itemize}
 
@@ -127,13 +127,24 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Engineer}{July 2021 -- Present}
+      {Senior Software Engineer}{December 2022 -- Present}
+      {Shield AI}{Alexandria, VA}
+      \resumeItemListStart
+        \resumeItem{Leading East Coast compute and infrastructure tooling team}
+        \resumeItem{Lead team to develop, deploy, and integrate RLOps toolset with pipeline, metrics storage, and visualization capabilites}
+        \resumeItem{Implemented gRPC simulation wrapper, enabling remote and distributed simulation and training via established native interface}
+        \resumeItem{Acted as technical lead and main contributor on implementation and spin-up of new production compute stack}
+        \resumeItem{Transitioned almost all internal C++ repositories to Conan package management}
+        \resumeItem{Proposed and drove adoption of semantic versioning across the East Coast technology division}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{July 2021 -- December 2022}
       {Heron Systems, wholly owned by Shield AI}{Alexandria, VA}
       \resumeItemListStart
-        \resumeItem{Currently leading East Coast infrastructure team to improve internal compute distribution and MLOps toolset}
+        \resumeItem{Worked with East Coast infrastructure team to improve internal compute distribution and MLOps toolset}
         \resumeItem{Owned and drove transition of all existing legacy infrastructure to on-premises Kubernetes stack}
         \resumeItem{Designed system to allow distributed and GPU accelerated RL training on multiple environments across a Kubernetes cluster}
-        \resumeItem{Built gRPC-driven service and client to store and aggregate reinforcement learning agent analysis data}
         \resumeItem{Built simple interface for distributed queueing for batch processing via an AMQP backplane}
         \resumeItem{Took an active role in application security, including multiple vulnerability identifications and fixes on existing projects}
       \resumeItemListEnd
@@ -169,21 +180,6 @@
             \resumeItem{Daemonless container runtime focused on security and compatibility with HPC systems}
             \resumeItem{Authored feature allowing image pulls from insecure registries when configured}
           \resumeItemListEnd
-
-        \resumeProjectHeading
-          {\textbf{HPC Pi} $|$ \emph{Slurm, Kubernetes}}{Spring 2020 -- Present}
-          \resumeItemListStart
-            \resumeItem{HPC cluster consisting of four Raspberry Pi's}
-            \resumeItem{Originally orchestrated with SLURM, now pivoting to Kubernetes}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Hybrid SIMD} $|$ \emph{C, OpenMP, OpenMPI}}{Summer 2020}
-          \resumeItemListStart
-            \resumeItem{Implemented OpenMP/OpenMPI hybrid API for basic SIMD compute operations}
-            \resumeItem{Used OpenMPI to parallelize across nodes, with nodes internally parallelized with OpenMP}
-          \resumeItemListEnd
-
     \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
